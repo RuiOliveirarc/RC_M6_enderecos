@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title></title>
+</head>
+<body>
+
+
+
+ 
 <h1>Classes IP</h1>
 
 <h3>Digite o endereço IP que pertende verificar</h3>
@@ -24,3 +35,8 @@
   	</select>
   	<input type='submit' value='Submit'>
 </form>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

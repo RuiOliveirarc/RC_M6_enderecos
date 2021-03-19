@@ -1,9 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+
+
+
+
 <?php
 	if(isset($_POST['n1']) && isset($_POST['n2']) && isset($_POST['n3']) && isset($_POST['n4'])){
+
 		$n1=$_POST['n1'];
 		$n2=$_POST['n2'];
 		$n3=$_POST['n3'];
 		$n4=$_POST['n4'];
+
+
 		if ($n1>=0 && $n1<=255 && $n2>=0 && $n2<=255 && $n3>=0 && $n3<=255 && $n4>=0 && $n4<=255) {
 
 			echo 'Endereço:' .$n1.'.'.$n2.'.'.$n3.'.'.$n4;
@@ -107,7 +121,9 @@
 	}
 	function back(){
 		echo "<br>";
-		echo "<a href='form.php'>voltar</a>";
+		echo '<a href="form.php">
+			<img src="house.svg" style="height:30px">
+		</a>';
 	}
 
 	function erro(){
@@ -116,3 +132,7 @@
 	}
 
 ?>
+	<script src="js/jquery-3.5.1.min.js"></script>
+  	<script src="js/bootstrap.js"></script>
+	</body>
+</html>
